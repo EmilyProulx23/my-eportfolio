@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
+
 <nav class="site-nav" id="siteNav">
   <div class="nav-inner">
     <a class="nav-brand" href="index.html">Emily Proulx<span class="dot">.</span></a>
@@ -49,7 +51,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
   <section id="course-info">
     <div class="container">
       <h2>Course &amp; Instructor Information</h2>
@@ -181,10 +183,10 @@
   <section id="schedule">
     <div class="container">
       <h2>Course Schedule</h2>
-      <div class="table-wrap">
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Course schedule, scrollable">
         <table class="schedule-table">
           <thead>
-            <tr><th>Week</th><th>Topic</th><th>Assigned Reading(s) &amp; Due Dates</th></tr>
+            <tr><th scope="col">Week</th><th scope="col">Topic</th><th scope="col">Assigned Reading(s) &amp; Due Dates</th></tr>
           </thead>
           <tbody>
             <tr>
@@ -351,9 +353,9 @@
       </p>
 
       <h3>Grading Scale</h3>
-      <div class="table-wrap">
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Grading scale, scrollable">
         <table>
-          <thead><tr><th>Letter Grade</th><th>Percentage</th><th>Letter Grade</th><th>Percentage</th></tr></thead>
+          <thead><tr><th scope="col">Letter Grade</th><th scope="col">Percentage</th><th scope="col">Letter Grade</th><th scope="col">Percentage</th></tr></thead>
           <tbody>
             <tr><td>A</td><td>94–100%</td><td>C+</td><td>77–79%</td></tr>
             <tr><td>A−</td><td>90–93%</td><td>C</td><td>74–76%</td></tr>
